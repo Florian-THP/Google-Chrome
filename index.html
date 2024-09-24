@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Google Chrome</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <nav class="menuContainer">
+        <div class="boxGauche">
+          <a class="lienboxPropos" href="https://about.google/?fg=1&utm_source=google-FR&utm_medium=referral&utm_campaign=hp-header">À propos</a>
+          <a class="lienboxStore" href="https://store.google.com/FR/?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=fr&pli=1">Google Store</a>
+        </div>
+
+        <div class="boxDroit">
+          <a class="lienboxMail" href="https://accounts.google.com">Gmail</a>
+          <a class="lienboxImg" href="https://www.google.com/imghp?hl=en&ogbl">Images</a>
+          <button class="btngoogleApps"><img class="menuIcon" src="images/menu.png"></button>
+          <button class="connexionBtn">Connexion</button>
+        </div>
+      </nav>
+    </header>
+
+
+    <div class="containerImageGoogle">
+      <img class="googleImg" src="images/google.png">
+    </div>
+
+    <div class="divInputSearch">
+      <img class="loupeIcon" src="images/loupe.png">
+      <input type="text" id="search">
+      <img class="microIcone" src="images/micro.png">
+      <img class="lensIcone" src="images/lens.png">
+    </div>
+
+    <div class="containerButton">
+      <button class="rechercheGoogle">Recherche Google</button>
+      <button class="autreGoogle">J'ai de la chance</button>
+    </div>
+
+
+    <footer>
+      <p class="pays">France</p>
+
+      <div class="trait"></div>
+
+      <div class="divFin">
+      <div class="containerFinUn">
+        <img class="feuilleImg" src="images/feuille.png">
+        <a class="lienClimat" href="https://sustainability.google/intl/fr_fr/?utm_source=googlehpfooter&utm_medium=housepromos&utm_campaign=bottom-footer&utm_content=">
+            Notre troisième décennie d'action pour le climat
+        </a>
+      </div>
+
+
+        <div class="containerFinDeux">
+          <a class="lienFooter" href="https://ads.google.com/intl/fr_fr/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Publicité</a>
+          <a class="lienFooter" href="https://smallbusiness.withgoogle.com/intl/fr_fr/?subid=fr-fr-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google&utm_medium=ep&utm_campaign=google_hpbfooter&utm_content=google_hpbfooter&gmbsrc=fr-fr-et-gs-z-gmb-s-z-u~sb-g4sb_srvcs-u">Entreprise</a>
+          <a class="lienFooter" href="https://www.google.com/search/howsearchworks/?fg=1">Comment fonctionne la recherche Google ?</a>
+        </div>
+
+        <div class="containerFinTrois">
+          <a class="lienFooter" href="https://support.google.com/legal/answer/3110420?hl=fr&fg=1">Signaler un contenu inapproprié</a>
+          <a class="lienFooter" href="https://support.google.com/websearch/answer/7585859?hl=fr&fg=1&visit_id=638627560880101162-2869694240&p=fr_consumer_info&rd=1">Info consommateurs</a>
+          <a class="lienFooter" href="https://policies.google.com/privacy?hl=fr&fg=1">Confidentialité</a>
+          <a class="lienFooter" href="https://policies.google.com/terms?hl=fr&fg=1">Conditions</a>
+          <div class="dropdown">
+            <a onclick="toggleDropdown()" class="dropbtn">Paramètres</a>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="#" class="lienParametres">Paramètres de recherche</a>
+                <a href="#" class="lienParametres">Recherche avancée</a>
+                <a href="#" class="lienParametres">Vos données dans la recherche Google</a>
+                <a href="#" class="lienParametres">Historique des recherches</a>
+                <a href="#" class="lienParametres">Aide sur la recherche</a>
+                <a href="#" class="lienParametres">Envoyer des commentaires</a>
+                <div class="trait"></div>
+                <button class="btnTheme">
+                  Thème sombre : activé
+                  <img class="luneImg" src="images/lune.png">
+                </button>
+            </div>
+        </div>
+        
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+
+
+
+<!-- BONUS : JavaScript qui permet de lancer une vraie recherche Google -->
+  
+<script>
+  // Ajout d'un écouteur d'événements pour la touche "Entrée"
+  document.getElementById('search').addEventListener('keypress', function(event) {
+    if (event.key === 'Enter') { // Vérifie si la touche "Entrée" a été appuyée
+      event.preventDefault(); // Empêche le comportement par défaut
+      var query = document.getElementById('search').value; // Récupère la valeur de l'input
+      if(query) { // Si l'utilisateur a tapé quelque chose
+        var googleSearchURL = 'https://www.google.com/search?q=' + encodeURIComponent(query);
+        window.location.href = googleSearchURL; // Redirige vers la recherche Google avec la requête
+      }
+    }
+  });
+</script>
+
+<!-- BONUS : JavaScript qui permet d'ouvrir les Paramètres en bas de page -->
+<script>
+  // Fonction pour ouvrir/fermer le menu
+  function toggleDropdown() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+  
+  // Fermer le dropdown si l'utilisateur clique à l'extérieur
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      for (var i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
+</script>
+
+
+  </body>
+</html>

@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body {
+    background-color: #202124;
+    color: #E8E8E8;
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    margin: 0;
+}
+
+header {
+
+}
+
+.menuContainer {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.boxGauche, .boxDroit {
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+}
+
+.lienboxPropos {
+    margin: 0px 5px 0px 25px;
+    color: #E8E8E8;
+    text-decoration: none;
+}
+
+.lienboxStore {
+    margin: 0px 5px;
+    padding: 5px;
+    color: #E8E8E8;
+    text-decoration: none;
+}
+
+.lienboxMail, .lienboxImg {
+    color: #E8E8E8;
+    text-decoration: none;
+}
+
+.lienboxImg {
+    margin: 0px 10px 0px 15px;
+}
+
+.lienboxPropos:hover, .lienboxStore:hover, .lienboxMail:hover, .lienboxImg:hover {
+   text-decoration: underline;
+}
+
+
+.btngoogleApps {
+    background-color: #202124;
+    border-radius: 100px;
+    border: none;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btngoogleApps:hover {
+    background-color: #2D2E31;
+}
+
+.menuIcon {
+    width: 20px;
+}
+
+.connexionBtn {
+    padding: 10px 12px;
+    min-width: 85px;
+    height: 42px;
+    color: #001d35;
+    background-color: #c2e7ff;
+    border: none;
+    border-radius: 30px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-left: 15px;
+    font-weight: 400;
+    margin-right: 30px;
+}
+
+.containerImageGoogle {
+    height: 200px;
+    width: 100%;
+    margin-top: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.googleImg {
+    width: 280px;
+}
+
+.divInputSearch {
+    display: flex;
+    border: 1px solid #5f6368;
+    border-radius: 24px;
+    min-height: 44px;
+    width: 80%;
+    max-width: 584px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -25px;
+    display: flex;
+    align-items: center;
+}
+
+.divInputSearch:hover {
+    background-color: #303134;
+    box-shadow: 0px 5px 10px #1B1C1D;
+    border-color: #303134;
+}
+.divInputSearch:hover #search {
+    background-color: #303134;
+}
+
+.loupeIcon {
+    width: 15px;
+    margin-left: 15px;
+}
+
+#search {
+    border: none;
+    background-color: #202124;
+    height: 44px;
+    width: 100%;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #E8E8E8;
+}
+
+#search:focus {
+    outline: none; 
+    border-color: transparent;
+}
+
+.lensIcone {
+    width: 25px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.microIcone {
+    width: 30px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.containerButton {
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rechercheGoogle {
+    background-color: #303134;
+    border: 1px solid #303134;
+    border-radius: 4px;
+    color: #e8eaed;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.autreGoogle {
+    background-color: #303134;
+    border: 1px solid #303134;
+    border-radius: 4px;
+    color: #e8eaed;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.rechercheGoogle:hover, .autreGoogle:hover {
+    border-color: #606368;
+}
+
+footer {
+    background-color: #171717;
+    height: auto;
+    width: 100%;
+    margin-top: auto;
+    position: fixed;
+    bottom: 0;
+}
+
+.pays {
+    padding-left: 30px;
+    font-size: 15px;  
+}
+
+.trait {
+    background-color: #313335;
+    height: 1px;
+    width: 100%;
+}
+
+.divFin {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    padding-top: 20px;
+    align-items: center;
+    width: 100%;
+}
+
+.containerFinUn {
+    width: 390px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lienClimat {
+    color: #E8E8E8;
+    text-decoration: none;
+}
+
+.lienClimat:hover {
+    text-decoration: underline;
+}
+
+.feuilleImg {
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+}
+
+.containerFinDeux {
+    width: 480px;
+    height: 40px;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+
+.containerFinTrois {
+    width: 700px;
+    height: 40px;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.lienFooter {
+    color: #E8E8E8;
+    text-decoration: none;
+}
+
+.lienFooter:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+.dropbtn {
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover {
+    text-decoration: underline;
+}
+
+.dropdown {
+    position: relative;
+    display: flex;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #1F1F1F;
+    width: 280px;
+    height: 235px;
+    padding-top: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    bottom: 100%; /* Toujours au-dessus du bouton */
+    z-index: 1;
+    right: 1px;
+    margin-bottom: 20px;
+}
+
+.dropdown-content .lienParametres {
+    color: black;
+    height: 30px;
+    text-decoration: none;
+    display: block;
+    color: #E8E8E8;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-content a:hover {
+    background-color: #363636;
+}
+
+.show {
+    display: block; /* Permet d'afficher le menu lorsqu'il est cliqué */
+}
+
+
+.btnTheme {
+    height: 45px;
+    width: 100%;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    font-size: 14px;
+    background-color: #1F1F1F;
+    border: none;
+    color: #E8E8E8;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.luneImg {
+    width: 18px;
+    margin-right: 10px;
+    display: none;
+}
+
+.btnTheme:hover {
+    background-color: #363636;
+}
+
+.btnTheme:hover .luneImg {
+    display: block;
+}
